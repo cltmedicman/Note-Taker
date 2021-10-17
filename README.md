@@ -12,6 +12,11 @@
   - [Installation](#installation)
   - [Questions](#questions)
   - [License](#license)
+  - [Deployed](#deployed)
+
+  ## Deployed
+  
+  Deployed application link for [Heroku](https://note-taker-cltmedicman.herokuapp.com/)
 
   ## Screenshot
   
