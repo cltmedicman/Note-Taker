@@ -4,7 +4,6 @@ const PORT = 3001;
 let allNotes = require('./db/db.json');
 const fs = require('fs');
 const path = require('path');
-let notesID = 0;
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -20,9 +19,15 @@ app.get('/api/notes', (req, res) => {
 // adding a new note adds to the local api allNotes and creates and pushes an Id
 app.post('/api/notes', (req, res) => {
     let newNote = req.body;
-    newNote["id"] = notesID;
-    notesID++;
-
+    // added code to always have a unique id even if server is restarted and db.json persists
+    let highId = (allNotes.map(x => x.id));
+    console.log(highId);
+    if (highId.length === 0) {
+        newNote["id"] = 1;
+    } else {
+        newNote["id"] = Math.max(...highId) + 1;
+    }
+    
     allNotes.push(newNote);
 
     WriteNotes(allNotes);
