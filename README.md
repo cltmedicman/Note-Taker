@@ -5,7 +5,7 @@
 
   ## Description
 
-  This application is designed to allow the end user to save notes and delete notes that are no longer needed. As the user saves or deletes the notes, the updated notes are displayed in a column to the right.
+  This application is designed to allow the end user to save notes and delete notes that are no longer needed. As the user saves or deletes the notes, the updated notes are displayed in a column to the left.
 
   ## Table of Contents
   - [Deployed](#deployed)
