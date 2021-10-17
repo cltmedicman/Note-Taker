@@ -8,10 +8,14 @@
   This application is designed to allow the end user to save notes and delete notes that are no longer needed. As the user saves or deletes the notes, the updated notes are displayed in a column to the right.
 
   ## Table of Contents
-
+  - [Screenshot](#screenshot)
   - [Installation](#installation)
   - [Questions](#questions)
   - [License](#license)
+
+  ## Screenshot
+  
+  ![screencapture-localhost-3001-notes-2021-10-16-20_35_34](https://user-images.githubusercontent.com/79491454/137605600-12fc57b3-d85a-446f-902e-c6db6cf40a1d.png)
 
   ## Installation
 
